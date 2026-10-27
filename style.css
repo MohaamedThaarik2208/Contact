@@ -1,0 +1,488 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #e0f2fe,
+        #f8fafc
+    );
+
+    color: #1e293b;
+}
+
+
+/* Main Page */
+
+.page {
+
+    min-height: 100vh;
+
+}
+
+
+/* Header */
+
+header {
+
+    background: #0f172a;
+
+    color: white;
+
+    padding: 18px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+
+}
+
+
+.logo {
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+}
+
+
+nav {
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+
+}
+
+
+nav a:hover {
+
+    color: #38bdf8;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* Main */
+
+main {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 40px auto;
+
+}
+
+
+/* Hero */
+
+.hero {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    animation: slideDown 0.6s ease;
+
+}
+
+
+.hero h1 {
+
+    margin: 0 0 10px;
+
+    font-size: 32px;
+
+    color: #0f172a;
+
+}
+
+
+.hero p {
+
+    margin: 0;
+
+    color: #64748b;
+
+}
+
+
+/* Add Button */
+
+.add-button {
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 14px 22px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    white-space: nowrap;
+
+}
+
+
+.add-button:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(37,99,235,0.3);
+
+}
+
+
+/* Search */
+
+.search-box {
+
+    margin: 25px 0;
+
+}
+
+
+.search-box input {
+
+    width: 100%;
+
+    padding: 16px 20px;
+
+    border: 2px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.3s;
+
+}
+
+
+.search-box input:focus {
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 4px rgba(37,99,235,0.1);
+
+}
+
+
+/* Table Card */
+
+.table-card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+
+.table-header {
+
+    padding: 22px 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 1px solid #e2e8f0;
+
+}
+
+
+.table-header h2 {
+
+    margin: 0;
+
+}
+
+
+.table-header span {
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+/* Table */
+
+.table-container {
+
+    overflow-x: auto;
+
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+
+th {
+
+    background: #0f172a;
+
+    color: white;
+
+    padding: 16px;
+
+    text-align: center;
+
+}
+
+
+td {
+
+    padding: 16px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #e2e8f0;
+
+}
+
+
+tbody tr {
+
+    transition: 0.3s;
+
+}
+
+
+tbody tr:hover {
+
+    background: #f8fafc;
+
+    transform: scale(1.005);
+
+}
+
+
+/* ID */
+
+.id {
+
+    background: #e0f2fe;
+
+    color: #0369a1;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+}
+
+
+/* Actions */
+
+.actions {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 8px;
+
+}
+
+
+.edit-button,
+.delete-button {
+
+    padding: 8px 12px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.edit-button {
+
+    background: #2563eb;
+
+}
+
+
+.edit-button:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+}
+
+
+.delete-button {
+
+    background: #ef4444;
+
+}
+
+
+.delete-button:hover {
+
+    background: #dc2626;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* Footer */
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #64748b;
+
+}
+
+
+/* Animation */
+
+@keyframes slideDown {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+    nav {
+
+        gap: 15px;
+
+    }
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .hero h1 {
+
+        font-size: 25px;
+
+    }
+
+    .actions {
+
+        flex-direction: column;
+
+    }
+
+}
